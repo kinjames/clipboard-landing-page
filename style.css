@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,600;0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url(images/bg-header-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+}
+
+
+h3 {
+    margin-bottom: 10px;
+    color: hsl(210, 10%, 33%);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+}
+
+a:hover{
+    color: hsl(171, 66%, 44%);
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+
+.header1, .header2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: hsl(210, 10%, 33%);
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+    margin-bottom: 80px;
+    padding: 20px;
+}
+
+.logo img {
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.header-text {
+    margin-bottom: 30px;
+}
+
+.header-para, .main-para,.card-text {
+    text-align: center;
+    color: hsl(201, 11%, 66%);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.small-text {
+    color: hsl(201, 11%, 66%);
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+
+.ios {
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0px 5px 5px .5px hsl(171, 66%, 44%);
+}
+
+.mac{
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0px 5px 5px .5px hsl(233, 100%, 69%);
+}
+
+.btn {
+    display: flex;
+    gap: 15px;
+}
+
+/* main */
+
+.main-header {
+    margin-bottom: 70px;
+}
+
+.img-text {
+    display: flex;
+    gap: 70px;
+    margin-bottom: 80px;
+}
+
+.image img {
+    width: 100%;
+}
+
+.main-text {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main-para{
+    margin-bottom: 60px;
+}
+
+.ipad {
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    gap: 20px;
+    padding: 20px;
+    height: 100%;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 80px; */
+}
+
+
+
+footer {
+    background-color: #dedede;
+    height: 100%;
+    width: 100%;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-items {
+    width: 60%;
+}
+
+.footer-logo img {
+    width: 50%;
+}
+
+.footer-socials {
+    width: 20%;
+}
+
+.footer-socials a {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); 
+font-size: 16px;}
+
+
+
+@media only screen and (max-width:1200px) {
+
+    body, main, footer, html {
+        width: 100%;
+    }
+    .container,.img-text,.image,.main-text,.footer-items,.footer-socials{
+        width: 100%;
+    } 
+
+}
+
+@media only screen and (max-width:1023px) {
+
+    body, main, footer, html {
+        width: 100%;
+    }
+    .container,.img-text,.image,.main-text,.footer-items,.footer-socials{
+        width: 100%;
+    } 
+}
+
+
+/* larger phones to smaller tablets */
+@media only screen and (max-width:767px) {
+    body, main, footer, html {
+        width: 100%;
+    }
+    .container,.img-text,.image,.main-text,.footer-items,.footer-socials{
+        width: 100%;
+    } 
+}
+
+
+@media only screen and (max-width:600px) {
+    body,main,header,.container,.main-text,.card,.footer-items,.footer-socials{
+        width: 100%;
+    }
+
+    .btn,.services,.brands,.footer,.footer-items{
+        flex-direction: column;
+    }
+
+    .brands {
+        gap: 50px;
+    }
+
+    .footer-logo img {
+        width: 15%;
+        margin-bottom: 20px;
+    }
+
+    .header {
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    .footer,.footer-items,.footer-socials{
+        text-align: center;
+    }
+
+
+    .img-text{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .image,.ipad img {
+        width: 100%;
+    }
+
+
+    .main-text{
+        text-align: center;
+    }
+
+    .ios,.mac{
+        width: 250px;
+        margin-bottom: 10px;
+    }
+}
